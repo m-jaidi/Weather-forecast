@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='./style/style.css'>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"
+        integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <header>
+        <div class="container-fluid">
+            <div class="row ">
+                <div class="col-2">
+                    <div class="d-flex justify-content-end fs-5">
+                        <a style="text-decoration:none;" class="d-flex" href="index.html"><img src="img/logo.png">
+                            <p style="padding-top:20px;padding-left:10px;color:rgb(74,161,243);font-weight: bold;">
+                                Weather
+                                App</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-10">
+                    <ul class="d-flex justify-content-end fs-5" style="padding-right: 50px;color:rgb(74,161,243)">
+                        <li style="padding-top:20px;padding-right:20px;"><a class="border-bottom border-info" style="text-decoration:none;"
+                                href="current.html">Current</a></li>
+                        <li style="padding-top:20px;padding-right:20px;"><a style="text-decoration:none;"
+                                href="forecast.html">Forecast</a></li>
+                        <li style="padding-top:20px"><a style="text-decoration:none;" href="#about">Open Weather Map</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div>
+        <h2 style="text-align:center;padding:60px 0;color:white;font-weight: bold;background-color:rgb(74,161,243)">Get
+            Current Weather Information</h2>
+    </div>
+
+    <div class="container text-center">
+        <p id="error" style="color: red;font-weight: bold;"></p>
+        <label style="color:rgb(74,161,243);padding-bottom: 10px;">Enter city name</label>
+        <form id="current_form" action="">
+            <input type="text" name="city" id="city" placeholder="Enter city name"
+                style="padding:5px;border-radius: 5px;">
+            <input id="btn" type="submit" value="Search city"
+                style="background-color: rgb(51,122,183);border: none;border-radius: 5px;padding:5px;color: white;">
+        </form>
+    </div>
+
+    <div class="container">
+        <div class="mx-auto mt-4 mb-4 px-5 text-light"
+            style="width: 600px;background-color:rgb(74,161,243);border-radius: 20px;">
+            <h2 class="text-center fw-bold">Current Weather<span id="mycity"></span><span id="country"></span></h2>
+            <div class=" info fs-3">
+                <div class="d-block">
+                    <p>Weather : </p><span id="weather"></span>
+                </div>
+                <div class="d-block">
+                    <p>Description : </p><span id="desc"></span>
+                </div>
+                <div class="d-block">
+
+                    <p>Temperature : </p><span id="temp"></span>
+                </div>
+                <div class="d-block">
+
+                    <p>Pressure : </p><span id="pressure"></span>
+                </div>
+                <div class="d-block">
+
+                    <p>Humidity : </p><span id="humidity"></span>
+                </div>
+                <div class="d-block">
+
+                    <p>Min Temperature : </p><span id="minTemp"></span>
+                </div>
+                <div class="d-block">
+
+                    <p>Max Temperature : </p><span id="maxTemp"></span>
+                </div>
+                <div class="d-block">
+                    <p>Wind Speed : </p><span id="wind_speed"></span>
+                </div>
+                <div class="d-block">
+                    <p>Wind Direction : </p><span id="wind_direction"></span>
+                </div>
+            </div>
+
+
+
+
+
+
+
+
+        </div>
+
+
+    </div>
+
+
+    <footer class="text-center p-2" style="background-color:rgb(74,161,243)">
+        <p style="padding-top: 10px;color:white">Copyright <span><i class="far fa-copyright"></i></span> Weather App
+        </p>
+    </footer>
+
+
+
+
+
+
+
+
+    <!-- jquery js -->
+    <script src="js/jquery.min.js"></script>
+    <!-- bootstrap js -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js"
+        integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js"
+        integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG"
+        crossorigin="anonymous"></script>
+    <!-- fichier js -->
+    <script src='./js/main.js'></script>
+
+
+</body>
+
+</html>
